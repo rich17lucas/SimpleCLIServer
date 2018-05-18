@@ -7,11 +7,11 @@ while(true) {
         println "processing new connection"
 
         socket.withStreams { input, output ->
-            def json = input.readLines()
-            json.forEach{
-                println it
-            }
-
+            //def json = input.readLines()
+            //json.forEach{
+            //    println it
+            //}
+            println inut.newReader().readLine()
         }
         println "processing/thread complete"
     }
